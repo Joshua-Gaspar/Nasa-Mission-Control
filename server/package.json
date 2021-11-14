@@ -5,14 +5,18 @@
   "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch":"nodemon src/server.js",
+    "watch": "nodemon src/server.js",
     "start": "node src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "csv-parse": "^4.16.3",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nasa-proyect": "file:.."
   },
   "devDependencies": {
     "nodemon": "^2.0.14"

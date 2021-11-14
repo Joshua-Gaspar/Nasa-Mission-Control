@@ -1,0 +1,28 @@
+{
+  "name": "nasa-proyect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "install": "npm run install-server && npm run install-client",
+    "server": "npm run watch --prefix server",
+    "client": "npm start watch --prefix client",
+    "watch": "concurrently \"npm run server\" \"npm run client\"",
+    "deploy":"npm run build --prefix client && npm start --prefix server",
+    "test": "npm run test --prefix server && npm run test --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joshua-Gaspar/Nasa-Mission-Control.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joshua-Gaspar/Nasa-Mission-Control/issues"
+  },
+  "homepage": "https://github.com/Joshua-Gaspar/Nasa-Mission-Control#readme"
+}
