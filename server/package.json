@@ -4,7 +4,7 @@
   "description": "Nasa Mision Control API",
   "main": "src/server.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest ",
     "test-watch": "jest --watch",
     "watch": "nodemon src/server.js",
     "start": "node src/server.js",
@@ -13,10 +13,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "csv-parse": "^4.16.3",
     "express": "^4.17.1",
+    "mongoose": "^6.0.13",
     "morgan": "^1.10.0",
     "nasa-proyect": "file:..",
     "pm2": "^5.1.2"
