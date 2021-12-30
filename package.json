@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-
   "scripts": {
     "install-server": "npm install --prefix server",
     "install-client": "npm install --prefix client",
@@ -11,8 +10,8 @@
     "server": "npm run watch --prefix server",
     "client": "npm start watch --prefix client",
     "watch": "concurrently \"npm run server\" \"npm run client\"",
-    "deploy":"npm run build --prefix client && npm start --prefix server",
-    "deploy-cluster":"npm run build --prefix client && npm run cluster --prefix server",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
     "test": "npm test --prefix server && npm test --prefix client"
   },
   "repository": {
@@ -25,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/Joshua-Gaspar/Nasa-Mission-Control/issues"
   },
-  "homepage": "https://github.com/Joshua-Gaspar/Nasa-Mission-Control#readme"
+  "homepage": "https://github.com/Joshua-Gaspar/Nasa-Mission-Control#readme",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
 }
