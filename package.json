@@ -1,5 +1,5 @@
 {
-  "name": "nasa-proyect",
+  "name": "nasa-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -24,8 +24,5 @@
   "bugs": {
     "url": "https://github.com/Joshua-Gaspar/Nasa-Mission-Control/issues"
   },
-  "homepage": "https://github.com/Joshua-Gaspar/Nasa-Mission-Control#readme",
-  "dependencies": {
-    "axios": "^0.24.0"
-  }
+  "homepage": "https://github.com/Joshua-Gaspar/Nasa-Mission-Control#readme"
 }
