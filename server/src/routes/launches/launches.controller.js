@@ -1,7 +1,7 @@
 const {
     getAllLaunches,
     scheduleNewLaunch,
-    existLaunchWithId,
+    existsLaunchWithId,
     abortLaunchById
 } = require('../../models/launches.model');
 
@@ -44,7 +44,7 @@ async function httpAddNewLaunch(req, res) {
 async function httpAbortLaunch(req, res) {
     const launchId = Number(req.params.id);
 
-        const existLaunch = await existLaunchWithId(launchId);
+        const existLaunch = await existsLaunchWithId(launchId);
         if(!existLaunch){
         return res.status(404).json({
             error: 'Launch not found'
